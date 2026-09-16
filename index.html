@@ -54,32 +54,12 @@
               <a class="button primary" href="#research">Explore research</a>
               <a class="button secondary" href="#members">Meet the group</a>
             </div>
-            <ul class="hero-stats" aria-label="Research applications">
-              <li><strong>Fission</strong><span>Reactor structural materials</span></li>
-              <li><strong>Fusion</strong><span>Materials for extreme heat and radiation</span></li>
-              <li><strong>Manufacturing</strong><span>Processing, structure, and properties</span></li>
-            </ul>
-          </div>
-
-          <div class="hero-panel" aria-label="Research focus summary">
-            <div class="panel-card">
-              <p class="panel-label">Current focus areas</p>
-              <h2>Radiation damage, corrosion, and advanced structural materials</h2>
-              <ul>
-                <li>Neutron and ion irradiation effects</li>
-                <li>Liquid metal compatibility and corrosion</li>
-                <li>Small-scale mechanical testing</li>
-                <li>Additive manufacturing and alloys for extreme environments</li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
-
       <section id="about" class="section">
         <div class="container narrow">
-          <p class="eyebrow accent">About the group</p>
-          <h2>Connecting material degradation to engineering performance.</h2>
+          <h2>About the group</h2>
           <p>
             Based in UC Berkeley’s Department of Nuclear Engineering, we combine irradiation experiments, microscopy, and mechanical testing to investigate the mechanisms that limit material performance. We develop methods to measure properties in small volumes, including the shallow layers affected by ion irradiation.
           </p>
@@ -96,8 +76,9 @@
           </div>
 
           <div class="card-grid three-up">
-            <article class="info-card">
-              <h3>Radiation damage</h3>
+            <details class="info-card research-card">
+              <summary><h3>Radiation damage</h3></summary>
+              <div class="research-card-content">
               <p>
                 We investigate how irradiation changes defect populations and microstructure, and how those changes affect hardening, swelling, and fracture. Controlled ion irradiation helps isolate mechanisms and evaluate candidate structural materials.
               </p>
@@ -106,10 +87,12 @@
                 <li>Defect evolution</li>
                 <li>Reactor safety</li>
               </ul>
-            </article>
+              </div>
+            </details>
 
-            <article class="info-card">
-              <h3>Liquid metal corrosion</h3>
+            <details class="info-card research-card">
+              <summary><h3>Liquid metal corrosion</h3></summary>
+              <div class="research-card-content">
               <p>
                 We study how structural alloys interact with lead-bismuth eutectic and other liquid metals. Experiments examine corrosion kinetics, oxygen chemistry, and liquid metal embrittlement to inform alloy selection and operating conditions.
               </p>
@@ -118,10 +101,12 @@
                 <li>Corrosion chemistry</li>
                 <li>Material compatibility</li>
               </ul>
-            </article>
+              </div>
+            </details>
 
-            <article class="info-card">
-              <h3>Small-scale mechanics</h3>
+            <details class="info-card research-card">
+              <summary><h3>Small-scale mechanics</h3></summary>
+              <div class="research-card-content">
               <p>
                 We develop nanoindentation, micropillar compression, and microtensile tests to measure deformation and fracture in small material volumes. These methods help evaluate irradiated specimens and resolve local microstructure–property relationships.
               </p>
@@ -130,10 +115,12 @@
                 <li>Nanoindentation</li>
                 <li>Fracture mechanics</li>
               </ul>
-            </article>
+              </div>
+            </details>
 
-            <article class="info-card">
-              <h3>Advanced materials</h3>
+            <details class="info-card research-card">
+              <summary><h3>Advanced materials</h3></summary>
+              <div class="research-card-content">
               <p>
                 We evaluate oxide dispersion strengthened steels, silicon carbide composites, refractory metals, and high-entropy alloys for nuclear applications. Characterization and mechanical testing reveal how processing and exposure affect their performance.
               </p>
@@ -142,10 +129,12 @@
                 <li>Strengthened steels</li>
                 <li>Fusion materials</li>
               </ul>
-            </article>
+              </div>
+            </details>
 
-            <article class="info-card">
-              <h3>Manufacturing and joining</h3>
+            <details class="info-card research-card">
+              <summary><h3>Manufacturing</h3></summary>
+              <div class="research-card-content">
               <p>
                 We investigate how additive manufacturing and joining processes shape microstructure and mechanical properties. Projects include additively manufactured steels, refractory materials, and compositionally graded components, with connections to Berkeley’s Manufacturing 360 partnership.
               </p>
@@ -154,10 +143,12 @@
                 <li>Graded materials</li>
                 <li>Component reliability</li>
               </ul>
-            </article>
+              </div>
+            </details>
 
-            <article class="info-card">
-              <h3>Irradiation data and analysis</h3>
+            <details class="info-card research-card">
+              <summary><h3>RPV database</h3></summary>
+              <div class="research-card-content">
               <p>
                 We are developing a Reactor Pressure Vessel (RPV) Steel Irradiation Database to organize historical post-irradiation examination data. Curating these records supports comparisons across irradiation campaigns and analysis of material degradation.
               </p>
@@ -166,7 +157,8 @@
                 <li>Materials informatics</li>
                 <li>RPV steels</li>
               </ul>
-            </article>
+              </div>
+            </details>
           </div>
         </div>
       </section>
@@ -174,8 +166,7 @@
       <section id="capabilities" class="section alt-bg">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow accent">Experimental capabilities</p>
-            <h2>Material Characterization Capabilities</h2>
+            <h2>Characterization Capabilities</h2>
             <p class="section-intro">Our experiments combine microstructural, mechanical, and thermal measurements. The instruments below are the in-house characterization tools used in our work.</p>
           </div>
           <div class="capability-grid">
@@ -183,101 +174,121 @@
               <figure>
                 <img src="images/capabilities/quattro-sem.png" alt="Thermo Scientific Quattro S scanning electron microscope" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Scanning electron microscopy</h3>
+              <details class="capability-details">
+                <summary><h3>Scanning electron microscopy</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Thermo Scientific Quattro S</p>
                 <p>Examine surfaces, fracture features, and microstructure using scanning electron microscopy (SEM).</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/scios.png" alt="Thermo Scientific Quattro S scanning electron microscope" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Dual-beam FIB & SEM</h3>
+              <details class="capability-details">
+                <summary><h3>Dual-beam FIB & SEM</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Thermo Scientific Scios 2 DualBeam FIB-SEM</p>
                 <p> A coupled focused ion beam (FIB) & SEM system enables high-precision 3D characterization and fast, high-quality transmission electron microscopy (TEM) sample preparation.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/nanoindenter.png" alt="Bruker Hysitron TI 990 nanoindenter" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Nano/triboindentation</h3>
+              <details class="capability-details">
+                <summary><h3>Nano/triboindentation</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Bruker Hysitron TI 990</p>
                 <p>Measure local hardness and elastic response to study variations across phases, processed regions, and irradiated layers.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/instron.jpeg" alt="Instron 34TM-50 testing frame in the Berkeley laboratory" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Mechanical testing</h3>
+              <details class="capability-details">
+                <summary><h3>Mechanical testing</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Instron 34TM-50</p>
                 <p>Measure load and displacement during tensile testing to characterize strength, ductility, and deformation.</p>
-              </div>
+                </div>
+              </details>
             </article>
              <article class="capability-card">
               <figure>
                 <img src="images/capabilities/kw.png" alt="Kammrath & Weiss Tensile & Compression Module" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Micro/meso-mechanical Testing</h3>
+              <details class="capability-details">
+                <summary><h3>Micro/meso-mechanical Testing</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Kammrath & Weiss Tensile & Compression Module</p>
                 <p>Conduct in-situ tensile/compression tests to observe microstructural changes during deformation across multiple length scales.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/xrd.png" alt="PANalytical X’Pert PRO diffractometer in the Berkeley laboratory" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>X-ray diffraction</h3>
+              <details class="capability-details">
+                <summary><h3>X-ray diffraction</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">PANalytical X’Pert PRO</p>
                 <p>Identify crystalline phases and investigate crystal structure to connect processing with material changes.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/dilatometer.png" alt="Linseis dilatometer" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Dilatometry</h3>
+              <details class="capability-details">
+                <summary><h3>Dilatometry</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Linseis DIL L75 series</p>
                 <p>Track dimensional changes during heating and cooling to investigate thermal expansion and phase transformations.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/thermal-analysis.png" alt="Linseis thermal analysis instrument" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Thermogravimetry</h3>
+              <details class="capability-details">
+                <summary><h3>Thermogravimetry</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Linseis TGA L81</p>
                 <p>Investigate thermal transitions and changes in mass during controlled temperature programs.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/conceptlaser-MLAB.png" alt="Concept Laser LPBF machine" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Laser Powder Bed Fusion</h3>
+              <details class="capability-details">
+                <summary><h3>Laser Powder Bed Fusion</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Concept Laser MLab</p>
                 <p>Create additively manufactured parts from a variety of alloy powders or conduct single-track and surface laser treatment experiments.</p>
-              </div>
+                </div>
+              </details>
             </article>
             <article class="capability-card">
               <figure>
                 <img src="images/capabilities/confocal.jpeg" alt="Evident Fluoview Laser Confocal Microscope" loading="lazy" decoding="async" width="640" height="480" />
               </figure>
-              <div class="capability-copy">
-                <h3>Confocal Laser Scanning Microscopy</h3>
+              <details class="capability-details">
+                <summary><h3>Confocal Laser Scanning Microscopy</h3></summary>
+                <div class="capability-copy">
                 <p class="instrument-name">Evident FluoView FV3000</p>
                 <p>Enables high-resolution 3D imaging and analysis of surface features, microstructures, coatings, interfaces, and defects in metals, ceramics, composites, and other engineered materials.</p>
-              </div>
+                </div>
+              </details>
             </article>
           </div>
           <div class="facility-note">
@@ -629,6 +640,11 @@
         </div>
       </div>
     </footer>
+
+    <dialog id="capability-dialog" class="capability-dialog" aria-labelledby="capability-dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close details" autofocus>×</button>
+      <div class="dialog-content"></div>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
